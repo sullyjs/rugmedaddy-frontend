@@ -11,6 +11,9 @@ $(".choose").click(function() {
   $("#line").removeClass("two");
   $("#line").removeClass("three");
   $("#line").removeClass("four");
+  $(".get").removeClass("active");
+  $(".get > .icon").removeClass("active");
+  $("#line").removeClass("five");
 })
 
 $(".pay").click(function() {
@@ -26,6 +29,9 @@ $(".pay").click(function() {
   $("#line").removeClass("one");
   $("#line").removeClass("three");
   $("#line").removeClass("four");
+  $(".get").removeClass("active");
+  $(".get > .icon").removeClass("active");
+  $("#line").removeClass("five");
 })
 
 $(".wrap").click(function() {
@@ -41,6 +47,9 @@ $(".wrap").click(function() {
   $("#line").removeClass("two");
   $("#line").removeClass("one");
   $("#line").removeClass("four");
+  $(".get").removeClass("active");
+  $(".get > .icon").removeClass("active");
+  $("#line").removeClass("five");
 })
 
 $(".ship").click(function() {
@@ -52,10 +61,31 @@ $(".ship").click(function() {
   $(".pay > .icon").removeClass("active");
   $(".wrap > .icon").removeClass("active");
   $(".choose > .icon").removeClass("active");
+  $(".get").removeClass("active");
+  $(".get > .icon").removeClass("active");
   $("#line").addClass("four");
   $("#line").removeClass("two");
   $("#line").removeClass("three");
   $("#line").removeClass("one");
+  $("#line").removeClass("five");
+})
+
+$(".get").click(function() {
+  $(".get").addClass("active");
+  $(".get > .icon").addClass("active");
+  $(".ship").removeClass("active");
+  $(".pay").removeClass("active");
+  $(".wrap").removeClass("active");
+  $(".choose").removeClass("active");
+  $(".pay > .icon").removeClass("active");
+  $(".wrap > .icon").removeClass("active");
+  $(".choose > .icon").removeClass("active");
+  $(".ship > .icon").removeClass("active");
+  $("#line").addClass("five");
+  $("#line").removeClass("two");
+  $("#line").removeClass("three");
+  $("#line").removeClass("one");
+  $("#line").removeClass("four");
 })
 
 $(".choose").click(function() {
@@ -63,6 +93,7 @@ $(".choose").click(function() {
   $("#second").removeClass("active");
   $("#third").removeClass("active");
   $("#fourth").removeClass("active");
+  $("#fifth").removeClass("active");
 })
 
 $(".pay").click(function() {
@@ -70,6 +101,7 @@ $(".pay").click(function() {
   $("#second").addClass("active");
   $("#third").removeClass("active");
   $("#fourth").removeClass("active");
+  $("#fifth").removeClass("active");
 })
 
 $(".wrap").click(function() {
@@ -77,6 +109,7 @@ $(".wrap").click(function() {
   $("#second").removeClass("active");
   $("#third").addClass("active");
   $("#fourth").removeClass("active");
+  $("#fifth").removeClass("active");
 })
 
 $(".ship").click(function() {
@@ -84,4 +117,13 @@ $(".ship").click(function() {
   $("#second").removeClass("active");
   $("#third").removeClass("active");
   $("#fourth").addClass("active");
+  $("#fifth").removeClass("active");
+})
+
+$(".get").click(function () {
+    $("#first").removeClass("active");
+    $("#second").removeClass("active");
+    $("#third").removeClass("active");
+    $("#fourth").removeClass("active");
+    $("#fifth").addClass("active");
 })

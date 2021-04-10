@@ -1,10 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #001721;
-  font-family: "Raleway";
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.ibb.co/HYwNc0r/z8ASMXd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'VT323';
+    vertical-align: middle;
+    display: table;
+    font-size: 22px;
 }
 
 ul, li {
@@ -18,36 +26,34 @@ ul, li {
   width: 32px;
   height: 32px;
   display: block;
-  fill: rgba(255, 255, 255, 0.5);
+  fill: #4836BF;
   margin-right: 20px;
   transition: all 0.2s ease-out;
 }
 
 .icon.active {
-  fill: #814ca7;
+  fill: #CA14C9;;
 }
 
 .icon.big {
   width: 64px;
   height: 64px;
-  fill: rgba(255, 255, 255, 0.5);
+  fill: #4836BF;
 }
 
 #wrapper {
   width: 900px;
   height: 400px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  position: relative;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #192e37;
+  background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   display: flex;
   align-items: center;
   justify-content: left;
-  overflow: hidden;
+  border-radius: 10px;
 }
 
 #left-side {
@@ -62,34 +68,34 @@ ul, li {
   padding-bottom: 10px;
   display: flex;
   line-height: 34px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #4836BF;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
 #left-side ul li:hover {
-  color: white;
+  color: #CA14C9;
   transition: all 0.2s ease-out;
 }
 #left-side ul li:hover > .icon {
-  fill: #fff;
+  fill: #CA14C9;
 }
 #left-side ul li.active {
-  color: white;
+  color: #CA14C9;
 }
 #left-side ul li.active:hover > .icon {
-  fill: #814ca7;
+  fill: #CA14C9;
 }
 
 #border {
   height: 288px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #4836BF;
 }
 #border #line.one {
   width: 5px;
   height: 54px;
-  background-color: #814ca7;
+  background-color: #711C91;
   margin-left: -2px;
   margin-top: 35px;
   transition: all 0.4s ease-in-out;
@@ -97,7 +103,7 @@ ul, li {
 #border #line.two {
   width: 5px;
   height: 54px;
-  background-color: #814ca7;
+  background-color: #711C91;
   margin-left: -2px;
   margin-top: 89px;
   transition: all 0.4s ease-in-out;
@@ -105,7 +111,7 @@ ul, li {
 #border #line.three {
   width: 5px;
   height: 54px;
-  background-color: #814ca7;
+  background-color: #711C91;
   margin-left: -2px;
   margin-top: 143px;
   transition: all 0.4s ease-in-out;
@@ -113,9 +119,18 @@ ul, li {
 #border #line.four {
   width: 5px;
   height: 54px;
-  background-color: #814ca7;
+  background-color: #711C91;
   margin-left: -2px;
   margin-top: 197px;
+  transition: all 0.4s ease-in-out;
+}
+
+#border #line.five {
+  width: 5px;
+  height: 54px;
+  background-color: #711C91;
+  margin-left: -2px;
+  margin-top: 251px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -124,7 +139,7 @@ ul, li {
   width: 75%;
   overflow: hidden;
 }
-#right-side #first, #right-side #second, #right-side #third, #right-side #fourth {
+#right-side #first, #right-side #second, #right-side #third, #right-side #fourth, #right-side #fifth {
   position: absolute;
   height: 300px;
   width: 75%;
@@ -136,18 +151,110 @@ ul, li {
   justify-content: center;
   flex-direction: column;
 }
-#right-side #first h1, #right-side #second h1, #right-side #third h1, #right-side #fourth h1 {
+#right-side #first h1, #right-side #second h1, #right-side #third h1, #right-side #fourth h1, #right-side #fifth h1 {
   font-weight: 800;
-  color: #fff;
+  color: #4836BF;
 }
-#right-side #first p, #right-side #second p, #right-side #third p, #right-side #fourth p {
-  color: #fff;
+#right-side #first p, #right-side #second p, #right-side #third p, #right-side #fourth p, #right-side #fifth p {
+  color: #5040b4;
   font-weight: 500;
   padding-left: 30px;
   padding-right: 30px;
 }
-#right-side #first.active, #right-side #second.active, #right-side #third.active, #right-side #fourth.active {
+#right-side #first.active, #right-side #second.active, #right-side #third.active, #right-side #fourth.active, #right-side #fifth.active {
   margin-top: 0px;
   opacity: 1;
   transition: all 0.6s ease-in-out;
+}
+
+a {
+    background: #CA14C9;
+    color: white;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bottom a {
+    color: white;
+    background-color: #CA14C9;
+    border: 2px solid #CA14C9;
+    border-radius: 50px;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-shadow: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    -webkit-transition: background-color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out;
+    transition: background-color 0.6s ease-out;
+}
+
+.bottom a:hover{
+    color: #CA14C9;
+    background: white;
+    transition: 0.6s ease-in-out;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.top{
+    width: 900px;
+    height: 50px;
+}
+
+ul.nav {
+    margin-left: 600px;
+    padding: 0;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+}
+
+ul.nav li {
+   border-right: 4px solid #001721;/* you can change the border color matching to your background color */
+   float: left;
+
+}
+
+ul.nav a {
+   padding: 0 28px;
+   text-decoration: none;
+   float: left;
+   border-radius: 20px;
+   cursor: pointer;
+   text-transform:uppercase;
+   font-weight: bold;
+ }
+
+header ul.nav li a:hover {
+    background: #ffffff;
+}
+
+header {
+    left: 0;
+    width: 900px;
+    height: 50px;
+    padding-top: 5vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+.inthemiddle {
+    vertical-align: middle;
 }
