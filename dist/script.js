@@ -1,4 +1,5 @@
-$(".choose").click(function() {
+
+$(".choose").click(function () {
   $(".choose").addClass("active");
   $(".choose > .icon").addClass("active");
   $(".pay").removeClass("active");

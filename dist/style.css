@@ -220,7 +220,7 @@ ul.nav {
 }
 
 ul.nav li {
-   border-right: 4px solid #001721;/* you can change the border color matching to your background color */
+
    float: left;
 
 }
