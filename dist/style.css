@@ -359,11 +359,16 @@ header .logo {
 @media (max-width: 858px) {
 	.content h1 {
 	color: white;
-	font-size: 40px;
+	font-size: 100px;
 }
 
 .content p {
 	color: white;
-	font-size: 20px;
+	font-size: 40px;
 }
+	
+.content img {
+	width: 600px;
+	height: 600px;
+	}
 }
